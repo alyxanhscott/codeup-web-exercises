@@ -6,7 +6,6 @@
     <meta name="keywords" content="HTML,CSS,web-development">
     <meta name="author" content="Allie Scott">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Welcome</title>
     <!--CSS goes into title tag, between style-->
     <style></style>
@@ -15,6 +14,7 @@
     <!--above for external links-->
 </head>
 <body>
+    <div id="top"></div>
 <!--quick key to comment is command+/-->
 <!--content for humans goes here in body tag-->
     <h1>TO DO: How to add/commit your work to Github.</h1>
@@ -31,6 +31,7 @@
 
     <div>Div elements (divider) are BLOCK elements</div>
     <a href="#">Anchor elements are inline elements</a>
+<!--do not put block level elements inside of inline elements-->
 
     <ul>
         <li>Create new file/edit existing file</li>
@@ -48,7 +49,46 @@
         <!-- this is an ordered list, see diff in browser-->
 
     </ol>
-<script> </script>
+
+    <!--image-->
+    <a href="http://www.petwave.com/Cats/Basics/Kittens.aspx" target="_blank">
+        <img width="200" src="image/Kitten 3.jpg">
+    </a>
+
+    <!--internal links!-->
+    <a href="#top">Top</a>
+    <!--see div element at top of page with top id, this links the two to take you to
+    top of page-->
+
+    <!--tables-->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Breed</th>
+        </tr>
+
+        <tr>
+            <td>Penelope</td>
+            <td>11 mo</td>
+            <td>Poodle</td>
+        </tr>
+
+        <tr>
+            <td>Princess</td>
+            <td>9 mo</td>
+            <td>Yorkie</td>
+        </tr>
+
+        <tr>
+            <td>Maxx</td>
+            <td>9 y/o</td>
+            <td>Shih-tzu</td>
+        </tr>
+    </table>
+    <script> </script>
 <!--javascript goes into bottom of body!! in script tag-->
+
+
 </body>
 </html>
