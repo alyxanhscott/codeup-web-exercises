@@ -77,13 +77,13 @@
             <div>
 
                 <label for="size">Select your dog's size: </label>
-                <select id="size">
+                <select name="size" id="size">
 
-                    <option value="small" >Small Breed (2-20 pounds.)</option>
+                    <option name="size" value="small" >Small Breed (2-20 pounds.)</option>
 
-                    <option value="medium" >Medium Breed (21-40 pounds.)</option>
+                    <option name="size" value="medium" >Medium Breed (21-40 pounds.)</option>
 
-                    <option value="edge" >Large Breed (41+ pounds.)</option>
+                    <option name="size" value="edge" >Large Breed (41+ pounds.)</option>
 
                 </select>
             </div>
@@ -98,18 +98,20 @@
             <div>
 
                 <label for="age">Select your dog's age: </label>
-                <select id="age">
+                <select name="age" id="age">
 
-                    <option value="young" >Young (2 months-2 years.)</option>
+                    <option name="age" value="young" >Young (2 months-2 years.)</option>
 
-                    <option value="mid" >Adult (3 years-7 years)</option>
+                    <option name="age" value="mid" >Adult (3 years-7 years)</option>
 
-                    <option value="old" >Elder (8 years-17+ years.)</option>
+                    <option name="age" value="old" >Elder (8 years-17+ years.)</option>
 
                 </select>
             </div>
             <br>
-
+            <div>
+                <button type="submit">Submit</button>
+            </div>
         </div>
     </form>
 </body>
