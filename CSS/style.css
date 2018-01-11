@@ -1,5 +1,5 @@
 .fancy-header {
-    color: rebeccapurple;
+    color: wheat;
     font-style: oblique;
     font-family: Baghdad;
     text-align: center;
@@ -21,7 +21,7 @@ ul, ol {
     text-align: center;
 }
 
-
+/*can add backgroundv image to any block element*/
 body {
     background-image: url(../image/cloudyskyrim.jpg);
     background-attachment: fixed;
@@ -37,6 +37,7 @@ table, td, tr {
     text-align: center;
     position: center;
     margin: auto;
+    color: royalblue;
 
 }
 
@@ -44,4 +45,8 @@ table, td, tr {
     text-align: center;
     position: center;
     margin: auto;
+}
+
+.wheat {
+    color: wheat;
 }
