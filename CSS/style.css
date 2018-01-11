@@ -2,19 +2,46 @@
     color: rebeccapurple;
     font-style: oblique;
     font-family: Baghdad;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .h2 {
     color: tomato;
     font-family: Baskerville;
+    text-decoration: underline;
+
 }
 
-ul {
-    color: dimgrey;
+ul, ol {
+    color: darkblue;
     font-family:Athelas;
+    margin: auto;
+    list-style-type: none;
+    text-align: center;
 }
 
-ol {
-    color: midnightblue;
-    font-family: "Bradley Hand";
+
+body {
+    background-image: url(../image/cloudyskyrim.jpg);
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+table, td, tr {
+    padding: 20px;
+    height: 50px;
+    width: 50px;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    position: center;
+    margin: auto;
+
+}
+
+#center {
+    text-align: center;
+    position: center;
+    margin: auto;
 }

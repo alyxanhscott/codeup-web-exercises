@@ -2,38 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<meta name="viewport"-->
+          <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
     <title>Advertisement Builder</title>
+    <link rel="stylesheet" href="CSS/advertisementss.css">
 </head>
 <body>
     <h1>Build your Advertisements here!</h1>
     <form action="https://hookb.in/vppyOMle" method="POST">
-        <div>
-            <label for="title">Item Title:
-                <textarea name="title" id="title" cols="50" rows="2" autofocus>
-                </textarea>
-            </label>
+        <div class="title">
+            <label for="title">Item Title:</label>
+                <textarea class="opac" name="title" id="title" cols="50" rows="2" placeholder="Title your item!"></textarea>
         </div>
-        <br>
-        <div>
-            <label for="price">Item Price: $
-                <textarea name="price" id="price" cols="30" rows="2" placeholder="Enter price here">
-                </textarea>
-            </label>
+        <div class="price">
+            <label for="price">Item Price: $</label>
+                <textarea class="opac" name="price" id="price" cols="50" rows="2" placeholder="Enter price here"></textarea>
         </div>
-        <br>
-        <div>
-            <label for="describe">Item Description:
-                <textarea name="describe" id="describe" cols="60" rows="20" placeholder="Describe what you're selling!">
-                </textarea>
-            </label>
+        <div class="description">
+            <label for="describe">Item Description:</label>
+                <textarea class="opac" name="describe" id="describe" cols="60" rows="20" placeholder="Describe what you're selling!"></textarea>
         </div>
-        <br>
         <div>
             <button type="submit">Post</button>
         </div>
     </form>
+
+    <div class="hover">
+        <p><em>adgenie.com</em></p>
+    </div>
 </body>
 </html>

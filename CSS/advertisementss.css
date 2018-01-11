@@ -1,0 +1,49 @@
+body    {
+    text-align: center;
+    background-image: url("../image/halftone-yellow.png");
+    margin-top: 80px;
+
+}
+
+h1  {
+    color: lightcoral;
+    font-family: cursive;
+    font-weight: lighter;
+    border: 3px dotted;
+    border-radius: 15px;
+    display: inline;
+}
+
+.title {
+    color: darkmagenta;
+    text-decoration: dashed;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+}
+
+.price {
+    color: darkmagenta;
+}
+
+.description {
+    color: darkmagenta;
+}
+
+button {
+    color: cornflowerblue;
+}
+
+.opac  {
+    opacity: .7;
+}
+
+.hover {
+    color: darkolivegreen;
+}
+.hover:hover {
+    color: rosybrown;
+}
+
