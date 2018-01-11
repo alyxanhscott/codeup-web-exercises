@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice</title>
+    <style>
+        .fancy-header {
+            color: coral;
+            text-decoration: underline;
+            /*css comment*/
+        }
+    </style>
+</head>
+<body>
+    <form action="https://hookb.in/ZjLP0e6O" method="POST">
+        <h2 class="fancy-header">selects drop downs:</h2>
+            <div>
+                <label for="fav_food">What is your favorite food? </label>
+                    <select name="fav_food" id="fav_food">
+                        <option value="american">American</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="indian">Indian</option>
+                        <option value="mexican">Mexican</option>
+                    </select>
+            </div>
+
+        <br>
+
+            <h2>disable</h2>
+                <div>
+                    <input type="text" name="username" value="codeup" disabled>
+
+                    <select name="newsletter_signup">
+                        <option disabled value="n">No</option>
+                        <option selected value="y">Yes</option>
+                    </select>
+                </div>
+
+        <br>
+
+            <h2>select dd</h2>
+                <div>
+                    <label for="fav_drink">What is yout favorite drink?</label>
+                    <select name="fav_drink" id="fav_drink">
+                        <option value="tea">Tea</option>
+                        <option value="bigred">Big Red</option>
+                        <option value="coffee">Coffee</option>
+                        <option value="water">Water</option>
+                    </select>
+                </div>
+
+        <br>
+        
+            <h2>radio, favorite color?</h2>
+                <div>
+                    <fieldset>
+                        <label for="red">Red
+                            <input type="radio" id="red" name="color" value="red">
+                        </label>
+                        <label for="blue">Blue
+                            <input type="radio" id="blue" name="color" value="blue">
+                        </label>
+                        <label for="green">Green
+                            <input type="radio" id="green" name="color" value="green">
+                        </label>
+                    </fieldset>
+                </div>
+        
+            <div>
+                
+                <button type="submit">submit</button>
+            </div>
+    </form>
+</body>
+</html>
