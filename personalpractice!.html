@@ -7,9 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Practice, Build Site and use Forms</title>
     <style>
-        .fancy-header {
-            color: darkred;
+
+        body {
+            text-align: center;
+            background-image: url("image/cloudyskyrim.jpg");
+            background-repeat: repeat-y;
         }
+        .fancy-header {
+            color: darkslateblue;
+            font-family: fantasy;
+        }
+
+        h2 {
+            color: darkgoldenrod;
+            font-family: fantasy;
+        }
+
+        p {
+            color: darkblue;
+            font-family: fantasy;
+        }
+
     </style>
 </head>
 <body>
@@ -92,9 +110,9 @@
 
     <a href="#top">Top of Page</a>
     <div>
-        <em>**Have your own dragon art ideas? Log in to submit them here!**</em>
+        <em class="fancy-header">**Have your own dragon art ideas? Log in to submit them here!**</em>
 
-        <form action="" method="POST">
+        <form class="fancy-header" action="" method="POST">
             <label for="username">Username </label>
             <input type="text" id="username" name="username" placeholder="Username here">
             <label for="password">Password: </label>

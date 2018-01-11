@@ -1,0 +1,36 @@
+body {
+    color: darkmagenta;
+    opacity: .5;
+    background: lightgoldenrodyellow;
+    text-align: center;
+}
+
+h1, .wow {
+    font-family: Courier;
+}
+
+/*descendant selector*/
+/*The space between the main tag and the p tag is what makes this work.
+any paragraph that is a descendant of the main element section will get
+this background effect.*/
+main p {
+    background: lightblue;
+}
+
+/*direct child selector*/
+/*This only styles the direct child of the identified tag. in this case,
+the main tag's direct child is the paragraph that is not nested in anything
+else beside the main itself. done with the > sign*/
+
+main>p {
+    font-family: "Comic Sans MS";
+
+}
+
+/*psuedo classes*/
+/*psuedo classes are activated when activated on web page. determined by a :
+the section with the class "ooh" will turn coral when hovered over*/
+.ooh:hover {
+    color: coral;
+}
+

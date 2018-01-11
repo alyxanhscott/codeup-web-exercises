@@ -1,0 +1,20 @@
+.fancy-header {
+    color: rebeccapurple;
+    font-style: oblique;
+    font-family: Baghdad;
+}
+
+.h2 {
+    color: tomato;
+    font-family: Baskerville;
+}
+
+ul {
+    color: dimgrey;
+    font-family:Athelas;
+}
+
+ol {
+    color: midnightblue;
+    font-family: "Bradley Hand";
+}
