@@ -1,0 +1,54 @@
+.gell {
+    font-family: 'Calligraffitti', cursive;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bold;
+    /*color: ;*/
+    margin-top: 100px;
+}
+
+.pink {
+    /*position: ;*/
+    /*top: 0px;*/
+    /*left: 0px;*/
+    /*right: 0px;*/
+    height: 550px;
+    border: 10px solid #ca4544;
+    background-color: #ca4544;
+}
+
+.get {
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Calligraffitti', cursive;
+    font-weight: bold;
+    color: white;
+    margin-top: 100px;
+
+}
+
+.gitinit {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+
+}
+
+.gitmaster {
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+
+}
+
+.comp {
+    font-family: 'Lora', serif;
+    text-align: center;
+    position: relative;
+    top: -195px;
+    color: white;
+    font-size: 18px;
+}
+
+.noopac {
+    opacity: .6;
+}
+
