@@ -30,6 +30,8 @@ label {
 
 .description {
     color: darkmagenta;
+    /*box-sizing: border-box;*/
+    /*width: 1496px;*/
 }
 
 button {
@@ -42,8 +44,33 @@ button {
 
 .hover {
     color: darkolivegreen;
+    position: relative;
+    float: left;
+    right: -167px;
 }
 .hover:hover {
     color: rosybrown;
 }
 
+.samplefloat {
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    bottom: 460px;
+    right: 0px;
+    width: 500px;
+    height: 500px;
+    color: darkmagenta;
+    font-weight: lighter;
+    font-family: cursive;
+    font-size: 15px;
+
+}
+
+.mask {
+    position: relative;
+    top: 20px;
+    height: 250px;
+    border: 3px dotted darkmagenta;
+}
