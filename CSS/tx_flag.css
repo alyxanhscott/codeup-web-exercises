@@ -2,7 +2,7 @@
     /*border: 2px solid blue;*/
     position: absolute;
     width: 501px;
-    height: 810px;
+    height: 800px;
     background-color: darkblue;
     margin-top: 0px;
 }
@@ -11,16 +11,17 @@
     /*border: 2px solid black;*/
     position: relative;
     left: 501px;
-    width: 950px;
-    height: 330px;
+    width: 916px;
+    height: 400px;
+    margin-top: -70px;
 }
 
 .red {
     /*border: 2px solid red;*/
     position: relative;
     left: 501px;
-    width: 950px;
-    height: 410px;
+    width: 916px;
+    height: 400px;
     background-color: #ad0a15;
 }
 
