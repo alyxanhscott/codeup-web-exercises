@@ -1,0 +1,72 @@
+html, body {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+/*the above makes box sizing apply to entirety of document*/
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.half {
+    width: 50%;
+    background-color: #ad0a15;
+    border: solid black;
+
+}
+
+.third {
+    width: 33.33333%;
+    background-color: pink;
+    border: solid black;
+
+}
+
+.fourth {
+    width: 25%;
+    background-color: darkblue;
+    border: solid black;
+
+}
+
+.eighth {
+    width: 12.5%;
+    background-color: cornflowerblue;
+    border: solid black;
+
+}
+
+@media screen and (max-width: 768px) {
+    .column.third,
+    .column.half
+    .column.fourth
+    .column.eighth{
+        width: 100%;
+    }
+}

@@ -1,0 +1,20 @@
+
+body {
+    text-align: center;
+    background-image: url("../image/cloudyskyrim.jpg");
+    background-attachment: fixed;
+}
+.fancy-header {
+    color: darkslateblue;
+    font-family: fantasy;
+}
+
+h2 {
+    color: darkgoldenrod;
+    font-family: fantasy;
+}
+
+p {
+    color: darkblue;
+    font-family: fantasy;
+}
