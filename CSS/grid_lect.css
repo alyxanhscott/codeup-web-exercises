@@ -5,6 +5,7 @@ html, body {
 * {
     box-sizing: border-box;
 }
+/*the above makes box sizing apply to entirety of document*/
 
 body {
     margin: 0;

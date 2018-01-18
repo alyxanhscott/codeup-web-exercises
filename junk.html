@@ -6,16 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Practice</title>
-    <style>
-        .fancy-header {
-            color: coral;
-            text-decoration: underline;
-            /*css comment*/
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/junk.css">
 </head>
 <body>
-    <form action="https://hookb.in/ZjLP0e6O" method="POST">
+    <div class="container">
+    <form class="column left" id="form1" action="https://hookb.in/ZjLP0e6O" method="POST">
         <h2 class="fancy-header">selects drop downs:</h2>
             <div>
                 <label for="fav_food">What is your favorite food? </label>
@@ -31,17 +26,17 @@
 
             <h2>disable</h2>
                 <div>
-                    <input type="text" name="username" value="codeup" disabled>
+                    <input type="text" name="username" value="hedgehog" disabled>
 
                     <select name="newsletter_signup">
                         <option disabled value="n">No</option>
                         <option selected value="y">Yes</option>
                     </select>
                 </div>
+    </form>
+    <form class="column right" id="form2" action="https://hookb.in/ZjLP0e6O" method="POST">
 
-        <br>
-
-            <h2>select dd</h2>
+            <h2>select drink</h2>
                 <div>
                     <label for="fav_drink">What is yout favorite drink?</label>
                     <select name="fav_drink" id="fav_drink">
@@ -74,5 +69,21 @@
                 <button type="submit">submit</button>
             </div>
     </form>
+
+    <div class="container">
+        <div id="image-container">
+            <img id="image" src="image/Kitten_3.jpg"/>
+        </div>
+
+        <div>
+            <h4 class="left">Be this kitty</h4>
+        </div>
+
+        <div>
+            <h4 class="right">He is very happy. </h4>
+        </div>
+
+    </div>
+    </div>
 </body>
 </html>
