@@ -1,0 +1,49 @@
+@media screen and (max-width:768px){
+    body {
+        width: 100%;
+        /*background-color: #ad0a15;*/
+    }
+
+    #company {
+        color: blue;
+    }
+
+    .alert-info {
+
+    }
+
+    .hidden-on-desktop {
+
+    }
+
+    .nav-links {
+
+    }
+
+    .header-img {
+
+    }
+
+    #main {
+
+    }
+
+    .main {
+
+    }
+
+    .sub-section {
+
+    }
+
+    #social-media-links {
+
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1200px) {
+    body {
+        /*background-color: blue;*/
+    }
+}
