@@ -8,9 +8,9 @@ h1 {
     text-align: center;
 }
 
-h1>span {
-    opacity: none;
-}
+/*h1>span {*/
+    /*opacity: none;*/
+/*}*/
 
 .panel-body{
     background-color: #ff9be1;
@@ -24,4 +24,14 @@ h1>span {
 
 div {
     font-size: 19px;
+    font-weight: bold ;
+}
+
+.btn-default {
+    float: right;
+}
+
+li, label, select {
+    font-weight: bold;
+    color: deeppink;
 }

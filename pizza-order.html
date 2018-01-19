@@ -52,7 +52,7 @@
                 <button type="submit" class="btn btn-default">Find a store near you!</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
                 <!--<li class="dropdown">-->
                     <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
                     <!--<ul class="dropdown-menu">-->
@@ -71,12 +71,12 @@
         <h1>Purrfect Pizzas</h1>
 </div>
 
-<div>
+<div class="container-fluid">
     <h2>Build your kitty-shaped pizza!</h2>
     <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#"><span class="badge">1</span>Size & Crust</a></li>
-        <li role="presentation"><a href="#"><span class="badge">2</span>Cheese & Sauce</a></li>
-        <li role="presentation"><a href="#"><span class="badge">3</span>Toppings</a></li>
+        <li role="presentation" class="active"><a href="#"><span class="badge">1</span> Size & Crust</a></li>
+        <li role="presentation"><a href="#"><span class="badge">2</span> Cheese & Sauce</a></li>
+        <li role="presentation"><a href="#"><span class="badge">3</span> Toppings</a></li>
     </ul>
 </div>
 
@@ -122,6 +122,11 @@
             14 inch, medium (14")
         </label>
     </div>
+    <div class="panel-footer clearfix">
+        <!--<button type="button" class="btn btn-primary">GET RID OF THIS BUTTON SOMEHOW</button>-->
+        <button type="button" class="pull-right">Next Page <span class="glyphicon glyphicon-chevron-right"></span></button>
+    </div>
+
 </div>
 
 <div class="panel panel-default">
@@ -141,7 +146,8 @@
         <option>Extra</option>
         <option>Double</option>
         <option>Alllll the cheese</option>
-    </select>,
+    </select>
+
 </div>
 
 <div class="panel panel-default">
@@ -166,6 +172,10 @@
             <option>Extra</option>
             <option>TONS</option>
         </select>
+    </div>
+    <div class="panel-footer">
+        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span>Previous</button>
+        <button type="button" class="btn btn-default">Next Page<span class="glyphicon glyphicon-chevron-right"></span></button>
     </div>
 
 </div>
@@ -252,8 +262,8 @@
 </div>
 
 <div>
-    <p id="pushcart" >
-        <button type="button" class="btn btn-primary btn-lg">Checkout<span class="glyphicon glyphicon-shopping-cart"></span> </button>
+    <p>
+        <button id=pushcart type="button" class="btn btn-primary btn-lg">Checkout<span class="glyphicon glyphicon-shopping-cart"></span> </button>
     </p>
 </div>
 
