@@ -18,6 +18,7 @@
 
     .nav-links {
 
+
     }
 
     .header-img {
@@ -47,3 +48,8 @@
         /*background-color: blue;*/
     }
 }
+
+.nav-links {
+    float: right;
+}
+

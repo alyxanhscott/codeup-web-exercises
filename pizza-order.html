@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Purrfect Pizzas</title>
+    <link rel="stylesheet" href="CSS/custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="CSS/bootstrap.min.css">-->
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Purrfect Pizzas!</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Menu <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Order Online!</a></li>
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">One more separated link</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="ZIP here">
+                </div>
+                <button type="submit" class="btn btn-default">Find a store near you!</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="jumbotron">
+        <h1>Purrfect Pizzas</h1>
+</div>
+
+<div>
+    <h2>Build your kitty-shaped pizza!</h2>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#"><span class="badge">1</span>Size & Crust</a></li>
+        <li role="presentation"><a href="#"><span class="badge">2</span>Cheese & Sauce</a></li>
+        <li role="presentation"><a href="#"><span class="badge">3</span>Toppings</a></li>
+    </ul>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        Choose size & crust
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Hand-Tossed</div>
+    <div class="panel-body">
+        Enjoy our fluffy, buttery hand-tossed pie, cut into a purrfect feline shape!
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            8 inch, small (8")
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            14 inch, medium (14")
+        </label>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Thin Crust</div>
+    <div class="panel-body">
+        Thin and crunchy, but still kitty-shaped! (We are named "Purrfect Pizzas, afterall.)
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            8 inch, small (8")
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            14 inch, medium (14")
+        </label>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        Choose cheese & sauce
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Cheese</div>
+    <div class="panel-body">
+        How much would you like?
+    </div>
+    <select class="form-control">
+        <option>Light</option>
+        <option>Normal</option>
+        <option>Extra</option>
+        <option>Double</option>
+        <option>Alllll the cheese</option>
+    </select>,
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Sauce</div>
+    <div class="panel-body">
+        Choose your flavor!
+    </div>
+    <select class="form-control">
+        <option>Tomato</option>
+        <option>Marinara</option>
+        <option>BBQ</option>
+        <option>Alfredo</option>
+        <option>Greek</option>
+    </select>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Amount?
+        </div>
+        <select class="form-control">
+            <option>Light</option>
+            <option>Normal</option>
+            <option>Extra</option>
+            <option>TONS</option>
+        </select>
+    </div>
+
+</div>
+
+<div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Choose your toppings!
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Meats:
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Sausage
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Steak
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Pepperoni
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Bacon
+            </label>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Non-meats:
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Banana Peppers
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Black Olives
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Onions
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Pineapple
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Tomato
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Anchovy
+            </label>
+        </div>
+    </div>
+
+</div>
+
+<div>
+    <p id="pushcart" >
+        <button type="button" class="btn btn-primary btn-lg">Checkout<span class="glyphicon glyphicon-shopping-cart"></span> </button>
+    </p>
+</div>
+
+
+
+
+<script src="JS/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--<script src="JS/bootstrap.min.js"></script>-->
+
+</body>
+
+</html>

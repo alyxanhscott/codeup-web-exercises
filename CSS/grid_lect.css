@@ -63,10 +63,47 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .column.third,
+    .column.third
     .column.half
     .column.fourth
-    .column.eighth{
+    .column.eighth
+    .column2.one
+    .column2.two
+    .column2.third
+    {
         width: 100%;
     }
+}
+
+.row2 {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.row2:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.column2 {
+    float: left;
+    padding: 10px;
+}
+
+.one {
+    width: 100%;
+    border: solid black;
+}
+
+.two {
+    width: 50%;
+    border: solid black;
+}
+
+.three {
+    width: 33.3333333%;
+    border: solid black;
 }

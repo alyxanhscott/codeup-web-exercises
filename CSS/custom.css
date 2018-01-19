@@ -1,0 +1,27 @@
+.jumbotron {
+    background-image: url("../image/pizza.png");
+}
+
+h1 {
+    background-color: white;
+    opacity: .7;
+    text-align: center;
+}
+
+h1>span {
+    opacity: none;
+}
+
+.panel-body{
+    background-color: #ff9be1;
+    opacity: .5;
+}
+
+#pushcart {
+    position: relative;
+    float: right;
+}
+
+div {
+    font-size: 19px;
+}
