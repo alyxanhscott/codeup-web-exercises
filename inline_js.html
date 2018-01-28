@@ -5,18 +5,24 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Inline JS</title>
 </head>
 <body>
 
-    <h1>Welcome to Javascript</h1>
-<!--external JS page referenced in script tag below *****--------------------->
-    <!--if using bootstrap/jquery, include the script references to them before the
-    js/custom code*******----------------------------------------------------->
-    <script src="JS/..."></script>
+    <h1>Welcome to Javascript, internal</h1>
+
 <script>
     // Javascript goes here ******------------------
+    "use strict";
 
+    console.log('Hello from Inline JavaScript!');
+
+    // the following line will show the OK/CANCEL confirm dialog
+    var confirmed = confirm('Are you sure you want to do XYZ?');
+    console.log(confirmed); // will be either true or false
+
+    var userInput = prompt('Please type something:');
+    console.log('The user entered: ' + userInput);
 
 </script>
 

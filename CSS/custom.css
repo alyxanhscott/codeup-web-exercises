@@ -1,6 +1,8 @@
 .jumbotron {
-    background-image: url("../image/pizza.png");
+    background-image: url("../image/pizza_cat_orange_cat_space_cat_classic_round_sticker-rbb8e29cffae242738fd3e5f91853a2e4_v9wth_8byvr_324.jpg");
+    height: 310px;
 }
+
 
 h1 {
     background-color: white;
@@ -35,3 +37,9 @@ li, label, select {
     font-weight: bold;
     color: deeppink;
 }
+
+#purr {
+    margin-top: 75px;
+}
+
+
