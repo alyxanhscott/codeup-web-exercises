@@ -114,3 +114,4 @@ function isVowel(letter) {
 
 console.log(isVowel("c"));
 
+6
