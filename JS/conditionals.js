@@ -210,7 +210,7 @@ discountHandler(luckyNumber, 100);
 
 function tDaysOfTheWeek(input) {
     if (input === "Tuesday" || "Thursday") {
-
+        return true;
     } else {
         alert("Doesn't begin with T");
     }
