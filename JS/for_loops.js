@@ -6,7 +6,7 @@
 //
 //     for (var table = 0; table <= 10; table++) {
 //         var result = number * table;
-//         console.log(number + '*' + table + '=' + result);
+//         console.log(number + ' x ' + table + '=' + result);
 //     }
 // }
 
@@ -30,3 +30,15 @@ for (var i = 0; i < 10; i++) {
     console.log(number);
     evenOddGenerator(number);
 }
+
+//------------------------------------------------------------------------------>
+
+//
+// for(var i = 1; i <= 9; i++) {
+//     var output = "";
+//     for (var j = 1; j <=i; j++) {
+//         output += i;
+//     }
+//     console.log(output);
+// }
+
