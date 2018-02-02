@@ -37,6 +37,7 @@
     // classRoom.addStudent("Bob");
     // classRoom.addLanguage("JavaScript");
     // classRoom.changeTopic("JS objects");
+    //** \n = new line
 
     // ------------------------>>
     //LECTURE NOTES END
@@ -174,11 +175,6 @@
         }
     ];
 
-    books.forEach(function(e, i) {
-        console.log(e.bookNumber + " Title: " + e.title + " Author: " + e.author.firstName + " " + e.author.lastName);
-    });
-
-
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -210,13 +206,32 @@
      *   name and returns a book object with the properties described
      *   previously. Refactor your code that creates the books array to instead
      *   use your function.
+     *
      * - Create a function named `showBookInfo` that accepts a book object and
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+    var booksArray = [];
+
+    var firstName = [];
+    var lastName = [];
+    var nickName = [];
 
     function createBook(title, author) {
-
+        var newBook = {
+            title: title,
+            author: author
+        };
+        booksArray.push(newBook);
     }
 
+    createBook('mr potato head', 'BLARGGG');
+    createBook('My Depression: A celebration', 'Zoidburg the Jew');
+    createBook('LAZAR GUNSSS', 'The Entire Internet');
+
+
+
+    booksArray.forEach(function(e, i) {
+        console.log("Title: " + e.title + " Author: " + e.author);
+    });
 })();
