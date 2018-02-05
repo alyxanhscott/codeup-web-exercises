@@ -31,10 +31,18 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 <button id="button4">Change!</button>
+<hr>
+<h2 id="timer">0</h2>
+<button id="start-button">Start</button>
+<button id="stop-button">Stop</button>
+<button id="reset-button">Reset</button>
 
 
-<ul id="emptyList">
+<aside>
+    <ul id="emptyList">
 </ul>
+</aside>
+
 
 <script>
     (function() {
@@ -103,6 +111,35 @@
 
                 addItem(prompt("Enter your item below:"));
                 ask = confirm('Would you like to add to the list? ');
+        }
+
+        var detonationTimer = 0;
+        var interval = 150;
+        var intervalID;
+
+        var begin = document.getElementById("start-button");
+        begin.addEventListener('click', function() {
+            intervalID = setInterval(updateTimer, interval);
+        });
+
+
+
+        function updateTimer() {
+            detonationTimer++;
+            document.getElementById("timer").innerHTML = detonationTimer;
+        }
+
+        var stop = document.getElementById("stop-button");
+        stop.addEventListener('click', defuseTheBOM);
+        function defuseTheBOM() {
+            clearInterval(intervalID);
+        }
+
+        var reset = document.getElementById("reset-button");
+        reset.addEventListener('click', resetTimer);
+        function resetTimer() {
+            timer.innerText = "0";
+            detonationTimer = 0;
         }
 
 
