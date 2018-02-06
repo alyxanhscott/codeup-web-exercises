@@ -17,7 +17,8 @@ function newMarkerFunction(place, icon) {
         position: place,
         map: map,
         animation: google.maps.Animation.DROP,
-        icon: icon
+        icon: icon,
+        draggable: true
     })
 }
 
@@ -61,32 +62,32 @@ function initMap() {
     var kemuriTatsuYa = {
         address: "2713 E 2nd St, Austin, TX 78702",
         icon: {
-            url: "image/002-bruce-lee.svg",
-            size: new google.maps.Size(25, 25),
+            url: "image/001-panda.svg",
+            size: new google.maps.Size(63, 64),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(17, 34),
-            scaledSize: new google.maps.Size(45, 45)
+            scaledSize: new google.maps.Size(32, 32)
 
         }
     };
     var saltySow = {
         address: "1917 Manor Rd, Austin, TX 78722",
         icon: {
-            url: 'image/003-fat.svg',
-            size: new google.maps.Size(25, 25),
+            url: 'image/002-pig.svg',
+            size: new google.maps.Size(63, 64),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(17, 34),
-            scaledSize: new google.maps.Size(45, 45)
+            scaledSize: new google.maps.Size(32, 32)
         }
     };
     var perlas = {
         address: "1400 S Congress Ave, Austin, TX 78704",
         icon: {
             url: "image/001-mexican-man.svg",
-            size: new google.maps.Size(25, 25),
+            size: new google.maps.Size(63, 64),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(17, 34),
-            scaledSize: new google.maps.Size(45, 45)
+            scaledSize: new google.maps.Size(32, 32)
 
         }
     };
