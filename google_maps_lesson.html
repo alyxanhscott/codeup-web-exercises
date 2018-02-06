@@ -24,7 +24,6 @@
 <script>
 
     "use strict";
-
     var mapDisplay = document.getElementById('map');
     var options = {
         zoom: 15,
@@ -34,8 +33,11 @@
         }
     };
 
+    function initMap() {
+        var map = new google.maps.Map(mapDisplay, options);
+    }
 
-    var map = new google.maps.Map(mapDisplay, options);
+
     var geocoder = new google.maps.Geocoder();
     var address = "300 Alamo Plaza, San Antonio, TX 78205";
 
@@ -56,12 +58,16 @@
     });
     var alamo = { lat: 29.4260, lng: -98.4861 };
 
-    function setMarker() {
+    function createMarker() {
         var marker = new google.maps.Marker({
             position: alamo,
             map: map,
             draggable: true
         });
+    }
+    
+    function setMarker() {
+        
     }
     map.addListener("dblclick", setMarker());
 </script>
