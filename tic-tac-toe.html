@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+    <style>
+
+        .text-style  {
+            font-family: "HanziPen SC";
+            color: rebeccapurple;
+        }
+
+        .reset-button {
+            margin: 10px;
+            background-color: yellow;
+            color: #2b542c;
+        }
+        .board {
+            text-align: center;
+            margin: 250px;
+            padding: 20px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+
+        .s4 {
+            height: 200px;
+            width: 50px;
+            border: dotted purple;
+            padding: 20px;
+        }
+
+        .kitty {
+            background: url("image/kitty-jump.png") center no-repeat;
+            background-size: 12vh;
+            animation: float-in 0.7s ease-in;
+        }
+
+        .doggo {
+            background: url("image/doggo-derp.gif") center no-repeat;
+            background-size: 12vh;
+            animation: float-in 0.7s ease-in;
+        }
+
+        @keyframes float-in {
+            from {
+                filter: opacity(0);
+            }
+            to {
+                filter: opacity(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="board">
+
+        <div class="text-style">
+            <h2>Tic-Cat-Dog</h2>
+            <h5>1 click places a kitty, 2 clicks a pupper!</h5>
+        </div>
+
+        <button class="reset-button" type="submit">Reset</button>
+
+
+        <div class="row">
+            <div class="col s4">
+            </div>
+            <div class="col s4">
+            </div>
+            <div class="col s4">
+            </div>
+            <div class="col s4">
+            </div>
+            <div class="col s4">
+            </div>
+            <div class="col s4">
+            </div>
+            <div class="col s4">
+            </div>
+            <div class="col s4">
+            </div>
+            <div class="col s4">
+            </div>
+
+        </div>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="JS/jquery-2.2.4.min.js"></script>
+    <script>
+        "use strict";
+
+        $('.s4').dblclick(function () {
+            $(this).toggleClass('doggo');
+            $(this).off('dblclick');
+        });
+
+        $('.s4').click(function () {
+            $(this).toggleClass('kitty');
+            $(this).off('click');
+
+        });
+
+        $('.reset-button').click(function () {
+            $('.s4').removeClass('kitty doggo');
+        })
+    </script>
+</body>
+</html>
