@@ -7,11 +7,25 @@
         .invisible {
             visibility: hidden;
         }
+
+        html {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
 <main>
+    <div id="newsletter-div">
+        <h1 id="newsletter-h1">
+            Would you like to sign up for our Newsletter?
+        </h1>
+        <span id="hide-newsletter">
+            X
+        </span>
+    </div>
+    <hr>
+    <h2 id="h2-fade"></h2>
     <div>
         <h2>10 Facts about National Parks</h2>
         <a href="#">Select to expand info</a>
@@ -106,6 +120,22 @@
     $('a').click(function () {
         $('dd').toggleClass('invisible');
     });
+
+    $('#hide-newsletter').click(function () {
+        $('#newsletter-div').hide();
+    });
+
+    $('h3+ul').hide();
+
+    $('h3').click(function () {
+        $(this).next().slideToggle();
+    });
+
+    $('#h2-fade').hide();
+
+    $('#h2-fade').html("Please Register for our site <a href='#!'>Here</a>").fadeIn(8000);
+
+
 
 </script>
 </body>

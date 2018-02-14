@@ -102,18 +102,21 @@
 
         $('.s4').dblclick(function () {
             $(this).toggleClass('doggo');
-            $(this).off('dblclick');
+            // $(this).off('dblclick');
         });
 
         $('.s4').click(function () {
             $(this).toggleClass('kitty');
-            $(this).off('click');
+            // $(this).off('click');
 
         });
 
         $('.reset-button').click(function () {
             $('.s4').removeClass('kitty doggo');
-        })
+        });
+
+
+
     </script>
 </body>
 </html>
