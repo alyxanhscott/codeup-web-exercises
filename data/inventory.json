@@ -38,5 +38,12 @@
         "powered"
     ],
     "price": 125
+}, {
+    "title": "Fighting Stick",
+    "quantity": "40",
+    "categories": [
+        "tool"
+    ],
+    "price": 35
 }
 ]

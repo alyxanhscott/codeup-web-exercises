@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Weather Map API</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+
+        @font-face {
+            font-family: "Dark Souls";
+            src: url("./fonts/DARK11__.ttf");
+        }
+
+        body {
+            text-align: center;
+            font-family: "Dark Souls";
+            text-shadow: 2px 2px black;
+            color: lightyellow;
+            background-image: url("image/niflheim.jpg");
+            background-attachment: fixed;
+            margin-top: 70px;
+        }
+        .container {
+            border-style: solid;
+            border-radius: 7px;
+            border-width: 40px;
+            border-image: url(celtic-knot-border.svg) 160 170 160 170;
+            background-color: goldenrod;
+            opacity: .8;
+            text-align: center;
+            padding: 10px 0 10px 0;
+        }
+
+        .container h3, .container h4 {
+            font-family: Serif;
+        }
+
+        .container h6 {
+            font-size: 20px;
+            font-family: serif;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div>
+    <h1><strong>Weather Map API</strong></h1>
+    <hr>
+    <h4><strong> 3 Day Forecast: </strong></h4>
+</div>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div id="day1" class="col sm 4">
+
+            </div>
+            <div id="day2" class="col sm 4">
+
+            </div>
+            <div id="day3" class="col sm 4">
+
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+<script src="JS/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+
+    // api key: 7a05cbf2964e46a552dd921848acfa75
+    "use strict";
+
+    var apiSrc = $.get("http://api.openweathermap.org/data/2.5/forecast", {
+        APPID: "7a05cbf2964e46a552dd921848acfa75",
+        q:     "San Antonio",
+        units: "imperial"
+    });
+
+    function htmlAdd(data) {
+        for(var i = 0; i < 24; i += 8) {
+
+            var value = data[i];
+
+            var dayofWeeknum = new Date( value.dt_txt ).getDay();
+
+            var days = ["Sun's Day", "Mani's Day", "Tyr's Day", "Woden's Day", "Thor's Day", "Frigg's Day", "Saturn's Day"];
+
+            var html = "";
+            html += "<h1>" + days[dayofWeeknum] + "</h1>";
+            html += "<br>";
+            html += "<h3>" + "Average: " + value.main.temp + "°F" + "</h3>";
+            html += "<h4>" + "High: " +  value.main.temp_max + "°F" + "</h4>";
+            html += "<h4>" + "Low: " +  value.main.temp_min + "°F" + "</h4>";
+            html += "<br>";
+            html += "<h6>" + "Humidity: " +  value.main.humidity + "%" + "</h6>";
+            html += "<h6>" + "Wind: " +  value.wind.speed + "mph" + "</h6>";
+            html += "<h6>" +  value.weather[0].main + ": " + value.weather[0].description + "</h6>";
+            html += "<h6>" + "Pressure: " +  value.main.pressure + "</h6>";
+
+
+            if (i == 0) {
+                $('#day1').append(html);
+            } else if (i == 8) {
+                $('#day2').append(html);
+            } else if (i == 16) {
+                $('#day3').append(html);
+            }
+
+        }
+
+    };
+
+    apiSrc.done(function (data, status, p) {
+        console.log(data);
+        htmlAdd(data.list);
+    });
+
+</script>
+</body>
+</html>
