@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: "Dark Souls";
+    src: url("../fonts/DARK11__.ttf");
+}
+
+body {
+    text-align: center;
+    font-family: "Dark Souls";
+    text-shadow: 2px 2px black;
+    color: lightyellow;
+    background: url("../image/niflheim.jpg") no-repeat fixed center;
+    margin-top: 70px;
+}
+.container {
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 40px;
+    border-image: url(../celtic-knot-border.svg) 160 170 160 170;
+    background-color: goldenrod;
+    opacity: .8;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.container h3, .container h4 {
+    font-family: Serif;
+}
+
+.container h6 {
+    font-size: 20px;
+    font-family: serif;
+}
+
+#map {
+    width: 600px;
+    height: 800PX;
+    background-color: #2e6da4;
+    border-radius: 7px;
+}
+
+#city-name {
+    padding-bottom: 30px;
+    font-size: 100px !important;
+}
+#label-inputfield {
+    font-size: 30px;
+    font-family: Serif;
+}
+
+
