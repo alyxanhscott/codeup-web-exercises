@@ -2,7 +2,7 @@
 "use strict";
 
 function updateWeather(location) {
-    var apiSrc = $.get("http://api.openweathermap.org/data/2.5/forecast", {
+    var apiSrc = $.get("https://api.openweathermap.org/data/2.5/forecast", {
         APPID: "7a05cbf2964e46a552dd921848acfa75",
         lat: location.lat,
         lon: location.lng,
