@@ -2,3 +2,6 @@
 secretFiles/*
 hurry-personal-project.html
 STUDY_PRACTICE.html
+node_modules/*
+package*.json
+api_keys.js
